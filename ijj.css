@@ -1,0 +1,172 @@
+/* Header ធំដែលមាន Logo និងពាក្យ Read Khmer */
+
+header {
+    background-color: #4e79c4;
+    display: flex;
+    justify-content: space-between;
+    /* រុញ Logo ទៅឆ្វេង និង Login ទៅស្ដាំ */
+    align-items: center;
+    padding: 15px 50px;
+    color: white;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 80%;
+    /* កែសម្រួលទំហំរូបក្នុងរង្វង់ */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    flex-grow: 1;
+    /* ឱ្យចំណងជើងនៅកណ្ដាល */
+    text-align: center;
+}
+
+
+/* របារ Menu ពណ៌ប្រផេះ */
+
+nav {
+    background-color: #e0e0e0;
+    padding: 10px 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4e79c4;
+}
+
+.banner {
+    background-color: #3f5fa8;
+    display: flex;
+    align-items: center;
+    padding: 40px 50px;
+    color: white;
+}
+
+.banner img {
+    width: 250px;
+    /* កំណត់ទំហំរូបភាពសៀវភៅ */
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.banner-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.language {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.circle {
+    width: 50px;
+    height: 10px;
+    background-color: #ff4d79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 0;
+}
+
+
+/* រៀបចំជួរសៀវភៅ */
+
+.book-gallery {
+    display: flex;
+    justify-content: center;
+    /* ដាក់សៀវភៅឱ្យនៅចំកណ្ដាល */
+    gap: 10px;
+    /* គម្លាតរវាងសៀវភៅនីមួយៗ */
+    padding: 20px;
+    background-color: white;
+}
+
+.book-gallery img {
+    width: 200px;
+    /* កំណត់ទំហំសៀវភៅ */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* រៀបចំ Footer ឱ្យនៅខាងក្រោម និងចំកណ្ដាល */
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* ឱ្យអក្សរធ្លាក់មកក្រោម */
+    align-items: flex-end;
+    /* រុញខ្លឹមសារទាំងអស់ទៅខាងស្ដាំ */
+    padding-right: 50px;
+    /* បន្ថែមគម្លាតពីគែមស្ដាំបន្តិច */
+    background-color: white;
+    /* ឬពណ៌ផ្សេងៗ */
+}
+
+.site-footer {
+    background-color: white;
+    /* ផ្ទៃពណ៌ស */
+    padding: 20px 50px;
+    /* ៥០px គឺដើម្បីកុំឱ្យវាជាប់គែមស្ដាំពេក */
+    display: flex;
+    flex-direction: column;
+    /* រៀបជួរឈរ (Link នៅលើ Copyright នៅក្រោម) */
+    align-items: flex-end;
+    /* នេះជាកូដសំខាន់សម្រាប់រុញទៅខាងស្ដាំ */
+    gap: 10px;
+    /* គម្លាតរវាងជួរអក្សរ */
+    width: 100%;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    /* គម្លាតរវាង អំពីយើង ទំនាក់ទំនង... */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.site-footer p {
+    margin: 0;
+    color: #333;
+}

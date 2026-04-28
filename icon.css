@@ -1,0 +1,24 @@
+body{
+    background-color: blanchedalmond;
+}
+table tr,td{
+   border-style:solid;
+   border-width: 2px;
+   border-color: brown;
+   border-width: 2px;
+  
+  
+}
+
+.td{
+    background-color: blanchedalmond;
+    border: blue solid;
+    color: brown;
+    
+    padding: 20px 30px;
+
+
+}
+.ifa-trash{
+    color: rgb(45, 37, 99);
+}

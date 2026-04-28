@@ -1,0 +1,21 @@
+const display = document.getElementById("display");
+
+function appendToDisplay(value) {
+    display.value += value;
+}
+
+function clearDisplay() {
+    display.value = "";
+}
+
+function calculate() {
+    if (display.value === "") {
+        return; // មិនគណនាបើគ្មានអ្វី
+    }
+
+    try {
+        display.value = eval(display.value);
+    } catch (e) {
+        display.value = "Error";
+    }
+}

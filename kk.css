@@ -1,0 +1,15 @@
+<style>body {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #6db33f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+</style>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="./jjj.css">
+
+<head>
+    <title>Simple POS System</title>
+
+</head>
+
+<body>
+
+    <div class="section">
+        <h3>📦 ទំនិញក្នុងស្តុក</h3>
+        <table>
+            <tr>
+                <th>ឈ្មោះ</th>
+                <th>តម្លៃ</th>
+                <th>សកម្មភាព</th>
+            </tr>
+            <tr th:each="p : ${inventory}">
+                <td th:text="${p.name}"></td>
+                <td th:text="${p.price} + ' $'"></td>
+                <td>
+                    <form th:action="@{/add-to-cart}" method="post">
+                        <input type="hidden" name="productId" th:value="${p.id}" />
+                        <button type="submit" class="btn-add">ថែមចូលកន្ត្រក</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h3>🛒 កន្ត្រកទំនិញ</h3>
+        <table>
+            <tr>
+                <th>ទំនិញ</th>
+                <th>តម្លៃ</th>
+            </tr>
+            <tr th:each="item : ${cart}">
+                <td th:text="${item.name}"></td>
+                <td th:text="${item.price} + ' $'"></td>
+            </tr>
+        </table>
+        <hr>
+        <p class="total">សរុប: <span th:text="${total} + ' $'">0 $</span></p>
+        <a href="/clear"><button class="btn-clear">សម្អាតកន្ត្រក / គិតលុយថ្មី</button></a>
+    </div>
+</body>
+
+</html>

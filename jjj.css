@@ -1,0 +1,53 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #5278a1;
+}
+
+.section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    text-align: left;
+}
+
+.btn-add {
+    background: #007bff;
+    color: rgb(8, 7, 7);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-clear {
+    background: #dc3545;
+    color: rgb(10, 9, 9);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.total {
+    font-size: 1.5em;
+    color: green;
+    font-weight: bold;
+}
+
+.hr {
+    color: black;
+}
